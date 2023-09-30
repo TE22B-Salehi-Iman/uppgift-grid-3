@@ -1,0 +1,66 @@
+body{
+    background-color: #f6e9dc;
+    background-image: url("./img/winter_bg3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.maingrid{
+    display: grid;
+    grid-template-columns: 80px 4fr 80px;
+    grid-template-rows: 80px 1fr 2fr 1fr;
+    gap: 5px;
+}
+
+header{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+nav{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+li{
+    list-style-type: none;
+    padding: 2px;
+}
+
+ul{
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+table{
+    border: 4px solid black;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+}
+
+th{
+    border: 3px solid red;
+}
+
+.weekend{
+    color: red;
+}
+
+main{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+footer{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    text-align: center;
+    color: whitesmoke;
+}
